@@ -13,8 +13,8 @@ const defaultMeta = {
   robots: "follow, index",
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status
-  image: "https://next-landing-vpn.vercel.app/assets/card-image.png",
-  author: "Lorem Ipsum",
+  // image: "https://next-landing-vpn.vercel.app/assets/card-image.png",
+  // author: "Lorem Ipsum",
 };
 
 /**
@@ -59,7 +59,7 @@ const SeoHead = (props) => {
       <meta property="og:site_name" content={meta.siteName} />
       <meta property="og:description" content={meta.description} />
       <meta property="og:title" content={meta.title} />
-      <meta name="image" property="og:image" content={meta.image} />
+      {/* <meta name="image" property="og:image" content={meta.image} /> */}
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@F2aldi" />
@@ -74,13 +74,12 @@ const SeoHead = (props) => {
             property="og:publish_date"
             content={meta.date}
           />
-          <meta name="author" property="article:author" content={meta.author} />
+          {/* <meta name="author" property="article:author" content={meta.author} /> */}
         </>
       )}
       {/* Favicons */}
-      {favicons.map((linkProps) => (
-        <link key={linkProps.href} {...linkProps} />
-      ))}
+      <link rel="icon" href="/favicon/apple-icon-57x57.png" />
+
       {/* Windows 8 app icon */}
       <meta name="msapplication-TileColor" content="#F53838" />
       <meta
