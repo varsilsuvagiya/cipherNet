@@ -1,5 +1,5 @@
 import React from "react";
-import LogoVPN from "../../public/assets/Logo.svg";
+import LogoVPN from "../../public/assets/Logon.svg";
 import Facebook from "../../public/assets/Icon/facebookg.svg";
 import Twitter from "../../public/assets/Icon/twitterg.svg";
 import Instagram from "../../public/assets/Icon/instagramg.svg";
