@@ -99,6 +99,24 @@ const Header = () => {
             >
               Testimonial
             </LinkScroll>
+            <LinkScroll
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              onSetActive={() => {
+                setActiveLink("contact");
+              }}
+              className={
+                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                (activeLink === "contact"
+                  ? " text-green-500 animation-active "
+                  : " text-black-500 hover:text-green-500 ")
+              }
+            >
+              Contact
+            </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
             {/* <Link href="/">
