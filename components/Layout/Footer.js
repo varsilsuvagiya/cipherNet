@@ -36,7 +36,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-green-500 hover:text-green-700 transition-all"
             >
-              Lathiya Solutions
+              Varsil Suvagiya
             </a>
             &nbsp; © {new Date().getFullYear()}
           </p>
